@@ -1,157 +1,583 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<title>Bootstrap Resume Template | Webthemez</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<link href="css/style.css" rel="stylesheet" type="text/css"> 
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+ 
+<!--[if lt IE 9]>
+    <script src="js/respond-1.1.0.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/html5element.js"></script>
+<![endif]-->
+ 
+</head>
+<body>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link href="index.css" rel="stylesheet">
+<!--Hero_Section-->
+<section id="hero_section" class="top_cont_outer">
+  <div class="hero_wrapper">
+    <div class="container">
+      <div class="hero_section">
+        <div class="row">
+          <div class="col-md-6">
+		   
+            <div class="top_left_cont intro zoomIn wow animated"> 
+              <h2>I’m Sandra<br> <strong>Web Developer</strong></h2>
+              <p>
+                Hi Welcome to my website, this is not just a website this is who i am and what i am.
+                Please go through every thing and absorb everything you want to know about me. 
+                Currently a React JS developer with graphql and apollo client. I have prior freelancing 
+                experience also entreperenuerial experience.
+                I am from planet with a passion of html, javascript and css.                 
+                Im not boring, but i can be. 
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <div class="container-fluid container-main" style="height: 100vh;">
-        <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Sandra Sasi</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarText">
-                <div class="container red topBotomBordersOut">
-                    <a>HOME</a>
-                    <a>ARTICLES</a>
-                    <a>PORTFOLIO</a>
-                    <a>ABOUT</a>
-                    <a>CONTACT</a>
-                  </div>
-                <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Github</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Open Source</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Wattpad</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Resume</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Work Experience</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Photography</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Games</a>
-                  </li>
-                </ul> -->
-                <span class="navbar-text">
-                  Follow me on twitter
-                </span>
-              </div>
-            </div>
-          </nav>
-       <div class="container">
-        <div class="row align-items-start">
-            <div class="col">
-                <div class="wrapper">
-                    <div class="head"></div>
-                <div class="charger">
-                <div class="box">
-                    <div class="wave wave-one"></div>
-                    <div class="wave wave-two"></div>
-                    <div class="wave wave-three"></div>
-                    <div class="shade"></div>
-                    <div class="bubble x1"></div>
-                    <div class="bubble x2"></div>
-                    <div class="bubble x3"></div>
-                    <div class="bubble x8"></div>
-                    <div class="bubble x9"></div>
-                    <div class="bubble x10"></div>
-                    <div class="bubble x4"></div>
-                    <div class="bubble x5"></div>
-                    <div class="bubble x6"></div>
-                    <div class="bubble x7"></div>
-                    <div class="bubble x1"></div>
-                    <div class="bubble x2"></div>
-                    <div class="bubble x3"></div>
-                    <div class="bubble x8"></div>
-                    <div class="bubble x9"></div>
-                    <div class="bubble x10"></div>
-                    <div class='title'>charging...</div>
-                </div>
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <p class="font-white">
-                    Hi Welcome to my website, this is not just a website this is who i am and what i am.
-                    Please go through every thing and absorb everything you want to know about me. 
-                    Currently a React JS developer with graphql and apollo client. I have prior freelancing 
-                    experience also entreperenuerial experience.
-                </p>
-            </div>
-        </div>   
-          
-        <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
-              <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
-              <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="images/img1.jpg" class="img-responsive" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p class="font-white">Welcome to my website.</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="images/img2.jpg" class="img-responsive" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p class="font-white">Dont be confused it just a portfolio.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/img3.jpg" class="img-responsive" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p class="font-white">A good portfolio.</p>
-                </div>
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </a>
-          </div> -->
+              </p>
+                <div class="underline"></div>             
+              <ul class="social_links">
+				<li class="twitter animated bounceIn wow delay-02s animated" style="visibility: visible; animation-name: bounceIn;"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+				<li class="facebook animated bounceIn wow delay-03s animated" style="visibility: visible; animation-name: bounceIn;"><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+				<li class="pinterest animated bounceIn wow delay-04s animated" style="visibility: visible; animation-name: bounceIn;"><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li>
+				<li class="gplus animated bounceIn wow delay-05s animated" style="visibility: visible; animation-name: bounceIn;"><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li> 
+			  </ul> 
+			  </div>
+          </div> 
+		  <div class="col-md-6">
+		   <img alt="" src="img/profile-pic.jpg">
+		  </div>
+        </div>
+      </div>
     </div>
-    <!-- Optional JavaScript; choose one of the two! -->
+  </div>
+</section>
+<!--Hero_Section--> 
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<!--Header_section-->
+<header id="header_wrapper"> 
+    <div class="header_box">
+    <!--  <div class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>-->
+	  <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+	    <div id="main-nav" class="collapse navbar-collapse navStyle">
+			<ul class="nav navbar-nav" id="mainNav">
+			  <li class="active"><a href="#hero_section" class="scroll-link">Home</a></li>
+			  <li><a href="#aboutUs" class="scroll-link">About Me</a></li>
+			  <li><a href="#service" class="scroll-link">Skills</a></li>
+			  <li><a href="#experience" class="scroll-link">Experience</a></li>
+			  <li><a href="#Portfolio" class="scroll-link">Projects</a></li>
+			  <li><a href="#team" class="scroll-link">Testimonial</a></li>
+			  <li><a href="#contact" class="scroll-link">Contact</a></li>
+			</ul>
+      </div>
+	 </nav>
+    </div> 
+</header>
+<!--Header_section--> 
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    -->
-  </body>
+<section id="aboutUs"><!--Aboutus-->
+<div class="inner_wrapper aboutUs-container fadeInLeft animated wow">
+  <div class="container">
+    <h2>About Me</h2>
+	<h6>I try everything just to get the taste of it</h6>
+    <div class="inner_section"> 
+	  <div class="row">
+						<div class="col-lg-12 about-us">
+							<div class="row">
+								<div class="col-md-6">
+									<h3>I am a developer with dexterity</h3>
+									<p>
+                    Im currently perfecting my world in Javascript and its younger brother typescript.
+                    I specialise in ReactJs with a focus on usability and perfecting my work in Graphql.
+									</p>
+									<!-- <ul class="about-us-list">
+										<li class="points">Consectetur Morbi sagittis, sem quisci ipsum gravida tortor</li>
+										<li class="points">Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida </li>
+										<li class="points">Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci gravida </li>
+                                        <li class="points">Sagittis, sem quis lacinia faucibus, orci ipsum gravida </li>
+										<li class="points">Ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci</li>
+									</ul> -->
+								 
+								</div><!-- /.col-md-6 -->
+								
+							<div class="col-md-6"> <br/>
+							        <div class="barWrapper">
+									 <span class="progressText"><B>React Js</B></span>
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" >   
+											<span  class="popOver" data-toggle="tooltip" data-placement="top" title="85%"> </span>     
+									</div>
+									</div>
+
+									<div class="barWrapper">
+									 <span class="progressText"><B>Node JS</B></span>
+									<div class="progress ">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="10" aria-valuemax="100" style="">
+										 <span  class="popOver" data-toggle="tooltip" data-placement="top" title="75%"> </span>  
+									  </div>
+									  
+									</div>
+									</div>
+									<div class="barWrapper">
+									 <span class="progressText"><B>Graphql</B></span>
+									<div class="progress ">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="10" aria-valuemax="100" style="">
+										 <span  class="popOver" data-toggle="tooltip" data-placement="top" title="75%"> </span>  
+									  </div>
+									  
+									</div>
+									</div>
+									<div class="barWrapper">
+									 <span class="progressText"><B>Android</B></span>
+									<div class="progress ">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="10" aria-valuemax="100" style="">
+										 <span  class="popOver" data-toggle="tooltip" data-placement="top" title="75%"> </span>  
+									  </div>
+									  
+									</div>
+									</div>
+									<div class="barWrapper">
+									 <span class="progressText"><B>Php</B></span>
+									<div class="progress ">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="10" aria-valuemax="100" style="">
+										 <span  class="popOver" data-toggle="tooltip" data-placement="top" title="75%"> </span>  
+									  </div>
+									  
+									</div>
+									</div>
+									<div class="barWrapper">
+									 <span class="progressText"><B>HTML</B></span>
+									<div class="progress ">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="10" aria-valuemax="100" style="">
+										 <span  class="popOver" data-toggle="tooltip" data-placement="top" title="75%"> </span>  
+									  </div>
+									  
+									</div>
+									</div>
+									<div class="barWrapper">
+									 <span class="progressText"><B>CSS3</B></span>
+									<div class="progress ">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="10" aria-valuemax="100" style="">
+										 <span  class="popOver" data-toggle="tooltip" data-placement="top" title="75%"> </span>  
+									  </div>
+									  
+									</div>
+									</div>
+
+									<div class="barWrapper">
+									 <span class="progressText"><B>BOOTSTRAP</B></span>
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+										 <span  class="popOver" data-toggle="tooltip" data-placement="top" title="65%"> </span>  
+									  </div>
+									</div>
+									</div>
+									<div class="barWrapper">
+									 <span class="progressText"><B>JQUERY</B></span>
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+											 <span  class="popOver" data-toggle="tooltip" data-placement="top" title="55%"> </span>  
+									  </div>
+									</div>
+									</div> 
+
+									</div>
+							</div><!-- /.col-md-6 -->
+							</div><!-- /.row -->	
+						</div><!-- /.col-lg-12 -->
+					</div>
+      
+    </div>
+  </div> 
+  </div>
+</section>
+<!--Aboutus--> 
+
+
+<!--Service-->
+<section  id="service">
+  <div class="container">
+    <h2>Skills</h2>
+	<h6>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum</h6>
+    <div class="service_wrapper">
+      <div class="row">
+        <div class="col-md-3">
+		<div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa fa-android"></i></span> </div>
+          <div class="service_block">
+            
+            <h3 class="animated fadeInUp wow">Android</h3>
+            <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+          </div>
+        </div>
+        <div class="col-md-3"> 
+		<div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-apple"></i></span> </div> 
+		<div class="service_block">
+            <h3 class="animated fadeInUp wow">Apple IOS</h3>
+            <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+		<div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-html5"></i></span> </div>
+          <div class="service_block">
+            
+            <h3 class="animated fadeInUp wow">Design</h3>
+            <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
+          </div>
+        </div>
+		  <div class="col-md-3">
+		<div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-user"></i></span> </div>
+          <div class="service_block">
+            
+            <h3 class="animated fadeInUp wow">Development</h3>
+            <p class="animated fadeInDown wow">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+</section>
+<!--Service-->
+
+
+ 
+
+<section id="experience" class="timeline">
+<div class="container">
+	 <h2>Experience</h2>
+	<h6>Total of 3.5 years of experience in the industry, i have 2 years experience in entrepreneur also few freelancing projects.</h6>
+    <div class="qa-message-list" id="wallmessages">
+    				<div class="message-item" id="m16">
+						<div class="message-inner">
+							<div class="message-head clearfix"> 
+								<div class="user-detail">
+									<h5 class="handle">Deltafolks Genesis Private Limited</h5>
+									<div class="post-meta">
+										<div class="asker-meta">
+											<span class="qa-message-what"></span>
+											<span class="qa-message-when">
+												<span class="qa-message-when-data">Jun 17</span>
+											</span> 
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="qa-message-content">
+								Was one of the directors and the software architect.
+							</div>
+					</div></div>
+					
+					<div class="message-item" id="m9">
+						<div class="message-inner">
+							<div class="message-head clearfix"> 
+								<div class="user-detail">
+									<h5 class="handle">Malkove Technologies</h5>
+									<div class="post-meta">
+										<div class="asker-meta">
+											<span class="qa-message-what"></span>
+											<span class="qa-message-when">
+												<span class="qa-message-when-data">July 17</span>
+											</span> 
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="qa-message-content">
+								Started to work with this organization for freelancing work.
+							</div>
+					</div></div>
+					
+					<div class="message-item" id="m7">
+						<div class="message-inner">
+							<div class="message-head clearfix"> 
+								<div class="user-detail">
+									<h5 class="handle">Opteamix Business Solution</h5>
+									<div class="post-meta">
+										<div class="asker-meta">
+											<span class="qa-message-what"></span>
+											<span class="qa-message-when">
+												<span class="qa-message-when-data">July 2019</span>
+											</span> 
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="qa-message-content">
+                Currenly im working as a Senior Software engineer under Javascript practise with ReactJs as the specialisation.
+                Im working on project based on US for a insurance brokarage company NFP. 
+							</div>
+					</div></div>
+				</div>
+</div>
+</section>
+		  
+ <!-- Portfolio -->
+<section id="Portfolio" class="content"> 
+  
+  <!-- Container -->
+  <div class="container portfolio_title"> 
+    
+    <!-- Title -->
+    <div class="section-title">
+      <h2>Projects</h2>
+	<h6>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum</h6>
+	  
+    </div>
+    <!--/Title --> 
+    
+  </div>
+  <!-- Container -->
+  
+  <div class="portfolio-top"></div>
+  
+  <!-- Portfolio Filters -->
+  <div class="portfolio"> 
+    
+    <div id="filters" class="sixteen columns">
+      <ul class="clearfix">
+        <li><a id="all" href="#" data-filter="*" class="active">
+          <h5>All</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".prototype">
+          <h5>Prototype</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".design">
+          <h5>Design</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".android">
+          <h5>Android</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".appleIOS">
+          <h5>Apple IOS</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".web">
+          <h5>Web App</h5>
+          </a></li>
+      </ul>
+    </div>
+    <!--/Portfolio Filters --> 
+    
+    <!-- Portfolio Wrapper -->
+    <div class="isotope fadeInLeft animated wow grid" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">  
+      <!-- Portfolio Item -->
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   appleIOS isotope-item effect-oscar">
+	   
+        <div class="portfolio_img"> 
+		<img src="img/portfolio_pic1.jpg"  alt="Portfolio 1"> </div> 
+			<figcaption>		
+				<div>
+				  <a href="img/portfolio_pic1.jpg" class="fancybox"> 
+					<h2>Warm <span>Oscar</span></h2> 
+				  </a>
+				</div>
+			</figcaption>
+        </figure>
+      <!--/Portfolio Item --> 
+      
+      <!-- Portfolio Item-->
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/portfolio_pic2.jpg" alt="Portfolio 1"> </div>
+        	<figcaption>		
+				<div>
+				  <a href="img/portfolio_pic2.jpg" class="fancybox"> 
+					<h2>Warm <span>Oscar</span></h2> 
+				  </a>
+				</div>
+			</figcaption>
+        </figure>
+      <!--/Portfolio Item --> 
+      
+      <!-- Portfolio Item -->
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design  isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
+       <figcaption>		
+				<div>
+				  <a href="img/portfolio_pic3.jpg" class="fancybox"> 
+					<h2>Warm <span>Oscar</span></h2> 
+				  </a>
+				</div>
+			</figcaption>
+        </figure>
+      <!--/Portfolio Item--> 
+      
+      <!-- Portfolio Item-->
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  android  prototype web isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/portfolio_pic4.jpg" alt="Portfolio 1"> </div>
+         <figcaption>		
+				<div>
+				  <a href="http://nowthatsentertainment.ltd" class="fancybox"> 
+					<h2>Now That's  <span>Entertainment</span></h2> 
+				  </a>
+				</div>
+			</figcaption>
+      </figure>
+      <!-- Portfolio Item --> 
+      
+      <!-- Portfolio Item -->
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 1"> </div>
+       <figcaption>		
+				<div>
+				  <a href="img/portfolio_pic5.jpg" class="fancybox"> 
+					<h2>Warm <span>Oscar</span></h2> 
+				  </a>
+				</div>
+			</figcaption>
+      </figure>
+      <!--/Portfolio Item --> 
+      
+      <!-- Portfolio Item -->
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  web isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 1"> </div>
+       <figcaption>		
+				<div>
+				  <a href="img/portfolio_pic6.jpg" class="fancybox"> 
+					<h2>Warm <span>Oscar</span></h2> 
+				  </a>
+				</div>
+			</figcaption>
+      </figure>
+      <!--/Portfolio Item --> 
+      
+      <!-- Portfolio Item  -->
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design web isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 1"> </div>       
+       <figcaption>		
+				<div>
+				  <a href="img/portfolio_pic7.jpg" class="fancybox"> 
+					<h2>Warm <span>Oscar</span></h2> 
+				  </a>
+				</div>
+			</figcaption>
+       </figure>
+      <!--/Portfolio Item --> 
+      
+      <!-- Portfolio Item -->
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   android isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/portfolio_pic8.jpg" alt="Portfolio 1"> </div>       
+      <figcaption>		
+				<div>
+				  <a href="img/portfolio_pic8.jpg" class="fancybox"> 
+					<h2>Warm <span>Oscar</span></h2> 
+				  </a>
+				</div>
+			</figcaption>
+        </figure>
+      <!--/Portfolio Item --> 
+      
+    </div>
+    <!--/Portfolio Wrapper --> 
+    
+  </div>
+  <!--/Portfolio Filters -->
+  
+  <div class="portfolio_btm"></div>
+  
+  
+  <div id="project_container">
+    <div class="clear"></div>
+    <div id="project_data"></div>
+  </div>
+ 
+  
+</section>
+<!--/Portfolio --> 
+
+<!-- 
+<section class="page_section team" id="team">
+  <div class="container">
+    <h2>Testimonial</h2>
+    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing.</h6>
+	  	
+		<div id="team" name="team">
+  <div class="container">
+    <div class="row centered">
+      
+      <div class="col-md-3 centered"> <img class="img img-circle lt-box" src="img/team01.jpg" height="120px" width="120px" alt="">
+        <div class="rt-box"><h4><strong>Rosy Illue</strong></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum gravida tortor.</p><br/>
+		</div>
+       </div>
+         <div class="col-md-3 centered"> <img class="img img-circle lt-box" src="img/team02.jpg" height="120px" width="120px" alt="">
+        <div class="rt-box"><h4><strong>Nissy Yukjk</strong></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum gravida tortor.</p><br/>
+		</div>
+       </div>
+	      <div class="col-md-3 centered"> <img class="img img-circle lt-box" src="img/team03.jpg" height="120px" width="120px" alt="">
+        <div class="rt-box"><h4><strong>Fsdf Efffl</strong></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum gravida tortor.</p><br/>
+		</div>
+       </div>
+	      <div class="col-md-3 centered"> <img class="img img-circle lt-box" src="img/team04.jpg" height="120px" width="120px" alt="">
+        <div class="rt-box"><h4><strong>Mnin Nulk</strong></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum gravida tortor.</p><br/>
+		</div>
+       </div>
+   
+    </div>
+  </div>
+</div>
+	</div>
+</section> -->
+<!--/Team-->
+<!--Footer-->
+<footer class="footer_wrapper" id="contact">
+  <div class="container">
+    <section class="page_section contact" id="contact">
+      <div class="contact_section">
+        <h2>Get In Touch</h2>
+	<h6>Looking forward to meet people and connect</h6>
+     
+      </div>
+      <div class="row">
+        <div class="col-lg-4 wow fadeInLeft">	
+		 <div class="contact_info">
+                           
+                            <div class="detail">
+                                <h4>Email me</h4>
+                                <p>sandrasasi.cek@gmail.com</p>
+                            </div> 
+                        </div>
+       		  
+			  
+          
+          <ul class="social_links">
+            <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+            <li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+            <li class="pinterest animated bounceIn wow delay-04s"><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li>
+            <li class="gplus animated bounceIn wow delay-05s"><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li> 
+          </ul>
+        </div>
+        <div class="col-lg-8 wow fadeInLeft delay-06s">
+         	  <!--NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form-->
+        
+		
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+    <!-- <div class="footer_bottom"><span>Copyright © 2018. <a href="https://webthemez.com/free-bootstrap-templates/" target="_blank">Bootstrap Templates</a> By WebThemez</span> </div> -->
+  </div>
+</footer>
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="js/jquery.nav.js"></script> 
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> 
+<script type="text/javascript" src="js/wow.js"></script> 
+ <script src="contact/jqBootstrapValidation.js"></script>
+ <script src="contact/contact_me.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</body>
 </html>
