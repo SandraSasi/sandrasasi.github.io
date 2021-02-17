@@ -228,7 +228,7 @@ h6 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     text-align: center;
-    margin: 0 0 60px 0;
+    /* margin: 0 0 60px 0; */
     line-height: 28px;
 }
 
@@ -245,6 +245,7 @@ p {
     background: rgb(0, 0, 0);
     padding: 5px 0px;
     /* border-bottom: 1px solid #383838; */
+    height: 8vh;
 }
 
 .header_box {
@@ -378,20 +379,21 @@ p {
 /* Top_content
 ---------------------------------*/
 .hero_section img{
-	width:100%;
+	/* width:100%; */
 }
 .top_cont_outer {
     position: relative;
     /* height: 750px; */
     background: url('../img/home2.jpg') no-repeat;
     background-size: cover;
-    background: #fff;
+    background: #000;
 }
 .top_cont_outer:before{/* content:''; */position:absolute;top:0;width:100%;z-index:5;/* background: rgba(25, 25, 25, 0.7); */height:100%;bottom:0;}
 .hero_section {
     position: relative;
     padding-top: 72px;
     z-index: 5;
+    height: 92vh;
 }
 
 .white_pad {
@@ -420,7 +422,7 @@ p {
 
 .top_left_cont h2 {
     font-size: 38px;
-    color: #020202;
+    color: #fff;
     margin: 0 0 0px 0;
     font-family: 'Raleway', sans-serif;
     text-align: right;
@@ -430,10 +432,10 @@ p {
 
 .top_left_cont h2 strong {
     font-weight: 700;
-    color: #000000;
+    color: #fff;
 }
 
-.top_left_cont p {color: #000;margin: 0 0 40px 0;line-height: 24px;font-size: 15px;text-align: right;letter-spacing: 1px;font-weight: normal;}
+.top_left_cont p {color: #fff;margin: 0 0 40px 0;line-height: 24px;font-size: 15px;text-align: right;letter-spacing: 1px;font-weight: normal;}
 
 a.read_more, a.read_more2 {
     font-family: 'Raleway', sans-serif;
