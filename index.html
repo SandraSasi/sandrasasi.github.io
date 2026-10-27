@@ -1,423 +1,89 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060d12">
+  <meta name="description" content="Sandra Sasi — software engineer, creative problem solver, and JavaScript enthusiast. Explore my work through an interactive personal interface.">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/hud.css">
+  <script src="js/hud.js" defer></script>
+  <title>Sandra Sasi — Personal Interface</title>
+</head>
+<body>
+  <a class="skip-link" href="#interface">Skip to portfolio</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="6"/><rect x="15" y="3" width="6" height="6"/><rect x="3" y="15" width="6" height="6"/><rect x="15" y="15" width="6" height="6"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 22v-3a8 8 0 0 1 16 0v3"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"/></symbol>
+    <symbol id="i-case" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7V3h8v4M2 12l10 4 10-4M12 13v5"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 5 10 8L22 5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="i-motion" viewBox="0 0 24 24"><path d="M2 12h5l3-8 4 16 3-8h5"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></symbol>
+  </svg>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
-    <link href="css/new.css" rel="stylesheet" type="text/css">
-    <title>Sandra Sasi</title>
-  </head>
-  <body>
-    <div class="container-fluid">        
-        <div class="top-nav">
-            <div class="row">
-                <div class="col-md-2">
-                    <p class="name">Sandra Sasi<br>
-                        Kochi<br>
-                        Techie
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2">
-                <div id="leftmenu">
-                    <p class="title">Languages & Framework</p>
-                    <span class="menuitem entypo-gauge" style="font-size: 30px; margin-left: 10px;">
-                      <div class="flex-row"><p id="cpu" style="font-size: 20px;">Javascript</p><p id="cpu" class="caption" style="font-size: 20px;">80%</p></div>
-                    </span> <br/>
-                    <span class="menuitem entypo-gauge" style="font-size: 30px; margin-left: 10px;">
-                        <div class="flex-row"><p id="cpu" style="font-size: 20px;">React JS</p><p id="cpu" class="caption" style="font-size: 20px;">80%</p></div>
-                    </span> <br/>
-                    <span class="menuitem entypo-gauge" style="font-size: 30px; margin-left: 10px;">
-                        <div class="flex-row"><p id="cpu" style="font-size: 20px;">Node Js</p><p id="cpu" class="caption" style="font-size: 20px;">80%</p></div>
-                    </span> <br/>
-                    <span class="menuitem entypo-gauge" style="font-size: 30px; margin-left: 10px;">
-                        <div class="flex-row"><p id="cpu" style="font-size: 20px;">Graphql</p><p id="cpu" class="caption" style="font-size: 20px;">80%</p></div>
-                    </span> <br/>
-                    <span class="menuitem entypo-gauge" style="font-size: 30px; margin-left: 10px;">
-                        <div class="flex-row"><p id="cpu" style="font-size: 20px;">HTML</p><p id="cpu" class="caption" style="font-size: 20px;">80%</p></div>
-                    </span> <br/>
-                    <span class="menuitem entypo-gauge" style="font-size: 30px; margin-left: 10px;">
-                        <div class="flex-row"><p id="cpu" style="font-size: 20px;">CSS</p><p id="cpu" class="caption" style="font-size: 20px;">80%</p></div>
-                    </span> <br/>
-                    <!-- <p class="title">Open source</p> -->
-                    <!-- <div class="hline title_underline"></div>  -->
-                    
-                    <!-- <div class="menu">
-                      <button class="menuitem"> <span class="entypo-right-open"/> <p class="caption">React-trello</p> </button>
-                      <hr style="border-color: transparent; margin: 0;"/>
-                    </div> -->
-                    
-                    <p class="title">Social</p>
-                    <ul class="social_links">
-                        <li class="twitter animated bounceIn wow delay-02s animated" style="visibility: visible; animation-name: bounceIn;"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-                        <li class="facebook animated bounceIn wow delay-03s animated" style="visibility: visible; animation-name: bounceIn;"><a href="https://www.linkedin.com/in/sandrasasi/"><i class="fa fa-linkedin"></i></a></li>
-                        <li class="pinterest animated bounceIn wow delay-04s animated" style="visibility: visible; animation-name: bounceIn;"><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li>
-                        <li class="gplus animated bounceIn wow delay-05s animated" style="visibility: visible; animation-name: bounceIn;"><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li> 
-                      </ul> 
-                </div>
-                <!-- <canvas id="particle1" width="20" height="300"></canvas> 
-                <canvas id="particle1_1" width="40" height="310"></canvas>
-                <canvas id="particle1_2" width="40" height="310"></canvas> -->
-            </div>
-            <div class="col-md-8">
-                <div class="container-fluid middle-container-1" style="padding: 30px;">
-                    <div class="row" >
-                        <div class="col-md-4">
-                            <div class="photo-box">
-                                <!-- <p> 
-                                    Currently a React JS developer along with graphql and apollo client.
-                                    I also freelance when I can, mostly building CMS application and portfolio sites.
-                                </p> -->
-                            </div>
-                        </div>
-                        <div class="col-md-5"><h4 class="user-name" >S . A . N . D . R . A</h4></div>
-                        <div class="col-md-3">
-                            <div class="semi_arc e5" data-toggle="modal" data-target="#exampleModal1">
-                                <div class="semi_arc_2 e4_1">
-                                    <div class="counterspin4"></div>
-                                </div>
-                                <div style="font-size: 40px; margin-top: 25px;">Experience</div>
-                                <div style="font-size: 25px;">4 years</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-4">
-                            <div id="arc_container" data-toggle="modal" data-target="#exampleModal">
-                                <div class="arc_reactor">
-                                    <div class="case_container">
-                                        <div class="e7">
-                                            <div class="semi_arc_3 e5_1">
-                                                <div class="semi_arc_3 e5_2">
-                                                    <div class="semi_arc_3 e5_3">
-                                                        <div class="semi_arc_3 e5_4"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="core2"><p  style="margin-top: 40px; color: rgba(255, 2, 2, 0.5);">Click Me</p></div>
-                                        </div>
-                                        <ul class="marks">
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                        </ul>
-                                    </div>
-                                    <!-- </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-4"></div>
-                        
-                        <div class="col-md-4">
-                            <div style="position: absolute;top: -200px;">
-                                <div class="parallelogram">
-                                    <h5 class="company-name">Current</h5>
-                                </div>
-                                <div class="current-company">
-                                    <h5 class="company-name">Senior Software Engineer</h5>
-                                    <h6>Opteamix Business Solution</h6>
-                                    <p class="description">
-                                        <!-- Currenly im working as a Senior Software engineer under Javascript practise with ReactJs as the specialisation.
-                                        Im working on project based on US for a insurance brokarage company NFP. -->
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <!-- Right Menu -->
-                <div id="rightmenu" > 
-                    <h3>Software Engineer</h3>
-                    <div >
-                        <div id="date_time">
-                            <div id="date" class="semi_arc e4">
-                            <div class="semi_arc_2 e4_1">
-                                <div class="counterspin4"></div>
-                            </div>
-                                <div style="font-size: 40px; margin-top: 25px;">07</div>
-                                <div style="font-size: 25px;">Projects</div>
-                            </div>
-                            
-                            <div id="time" class="arc e1">
-                                <div style="font-size: 23px; margin-left: -10px; margin-top: 3px;">04</div>
-                                <div style="font-size: 17px; margin-top: 0px;">Github Repository</div>
-                            </div>
-                            <div id="time" class="arc e1" style="margin-right: -10px; margin-top: 110px;">
-                                <div style="font-size: 23px; margin-left: -10px; margin-top: 10px;">04</div>
-                                <div style="font-size: 17px; margin-top: 0px;">Open Source</div>
-                            </div>
-                        </div>
-                    </div>
-                    <h4 style="margin-top: 50px;">Projects</h4>
-                    <div class="programming-table">
-                        <span class="menuitem entypo-gauge" style="font-size: 30px; margin-left: 10px;">
-                            <p id="cpu" class="caption" style="font-size: 20px;">Now That's Entertainment</p>
-                          </span> <br/>
-                          
-                          <span class="menuitem entypo-chart-area" style="font-size: 30px; margin-left: 10px;">
-                            <p id="ram" class="caption" style="font-size: 20px;">The Hotel Inspector</p>
-                          </span> <br/>
-                          
-                          <span class="menuitem entypo-chart-pie" style="font-size: 30px; margin-left: 10px;">
-                            <p id="proc" class="caption" style="font-size: 20px;">Emploeur Mobile App</p>
-                          </span>
-      
-                          <span class="menuitem entypo-chart-pie" style="font-size: 30px; margin-left: 10px;">
-                            <p id="proc" class="caption" style="font-size: 20px;">Deltafolks</p>
-                          </span>
-      
-                          <span class="menuitem entypo-chart-pie" style="font-size: 30px; margin-left: 10px;">
-                            <p id="proc" class="caption" style="font-size: 20px;">Mamre Studio</p>
-                          </span>
-      
-                          <span class="menuitem entypo-chart-pie" style="font-size: 30px; margin-left: 10px;">
-                            <p id="proc" class="caption" style="font-size: 20px;">Baltimore Mosaic-live</p>
-                          </span>
-                        <!-- <div class="flex-row"><li>Javascript</li>
-                            <p>70%</p>
-                      
-                        </div>
-                        <div class="flex-row"><li>React</li><p>80%</p></div>
-                        <div class="flex-row"><li>Graphql</li><p>70%</p></div>
-                        <div class="flex-row"><li>Apollo Client</li><p>70%</p></div>
-                        <div class="flex-row"><li>Node</li><p>70%</p></div>
-                        <div class="flex-row"><li>CSS3</li><p>70%</p></div>
-                        <div class="flex-row"><li>HTML5</li><p>70%</p></div> -->
-                    </div>
-                    <!-- <div id="particle10" class="hline"></div>
-                    <div id="particle11" class="hline"></div>
-                    <div id="particle12" class="vline"></div> -->
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#overview" aria-label="Sandra Sasi home"><span class="brand-mark">S<span>.</span></span><span class="brand-copy">SANDRA SASI<small>PERSONAL INTERFACE <span class="version">V.02</span></small></span></a>
+      <div class="system-status"><span class="status-dot"></span> ALL SYSTEMS ONLINE <span class="system-divider"></span><span class="muted">PORTFOLIO / HUMAN INTERFACE</span></div>
+      <div class="header-controls"><time id="clock" aria-label="Current local time">00:00:00</time><button class="icon-button" id="motion-toggle" aria-label="Pause interface animations" aria-pressed="false" title="Pause animations"><svg><use href="#i-motion"/></svg></button><button class="icon-button fullscreen-toggle" id="fullscreen-toggle" aria-label="Enter fullscreen" title="Fullscreen"><svg><use href="#i-expand"/></svg></button></div>
+    </header>
 
-    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">I am a developer with dexterity</h5>
+    <main id="interface" tabindex="-1">
+      <div class="section-topline"><span><span class="tiny-cross">+</span> WELCOME TO MY WORLD</span><span>DESIGNED TO EXPLORE. BUILT TO CONNECT. <span class="tiny-cross">+</span></span></div>
+      <section class="command-deck" id="overview" aria-label="Portfolio overview">
+        <svg class="circuit-lines" viewBox="0 0 1300 650" preserveAspectRatio="none" aria-hidden="true"><g fill="none"><path d="M270 155h65l75 75h110M285 445h60l65-65h90M1020 185h-55l-55 55H800M1030 465h-65l-65-65h-90"/><path d="M295 164h36l75 75h66M1020 195h-49l-55 55h-60" class="secondary-line"/></g><g class="circuit-nodes"><circle cx="270" cy="155" r="3"/><circle cx="285" cy="445" r="3"/><circle cx="1020" cy="185" r="3"/><circle cx="1030" cy="465" r="3"/></g></svg>
+
+        <aside class="left-column">
+          <section class="hud-panel skills-panel floating-panel" aria-labelledby="skills-title">
+            <div class="panel-heading"><span class="panel-index">01 / CAPABILITIES</span><span class="panel-corner">⌁</span></div>
+            <h2 id="skills-title">My toolkit<span>.</span></h2>
+            <p class="panel-subtitle">THE TECH BEHIND THE EXPERIENCE</p>
+            <div class="skill-list">
+              <div class="skill"><div><span><b class="tech-symbol">C#</b> C#</span><span class="skill-type">BACKEND</span></div><div class="skill-track"><span style="--level:94%"></span></div></div>
+              <div class="skill"><div><span><b class="tech-symbol">TS</b> TypeScript</span><span class="skill-type">CORE</span></div><div class="skill-track"><span style="--level:92%"></span></div></div>
+              <div class="skill"><div><span><b class="tech-symbol">Ch</b> ChaiScript</span><span class="skill-type">SCRIPTING</span></div><div class="skill-track"><span style="--level:88%"></span></div></div>
+              <div class="skill"><div><span><b class="tech-symbol">N</b> Node.js</span><span class="skill-type">BACKEND</span></div><div class="skill-track"><span style="--level:76%"></span></div></div>
+              <div class="skill"><div><span><b class="tech-symbol">◇</b> GraphQL</span><span class="skill-type">API</span></div><div class="skill-track"><span style="--level:82%"></span></div></div>
+              <div class="skill"><div><span><b class="tech-symbol">PHP</b> PHP</span><span class="skill-type">BACKEND</span></div><div class="skill-track"><span style="--level:75%"></span></div></div>
             </div>
-            <div class="modal-body">
-                Im a web developer with entreperenuerial background. In other words i worked for myself for 2 years
-                and then to returned to start working for someone else
-                <ul class="about-us-list">
-                    <li class="points">I have prior freelancing experience also entreperenuerial experience </li>
-                    <li class="points">I am from planet with a passion of html, javascript and css. </li>
-                    <li class="points">I’ve also worked with Java/Android Studio.. </li>
-                    <li class="points">Im currently perfecting my world in Javascript and its younger brother typescript. </li>
-                    <li class="points">I specialise in ReactJs with a focus on usability and perfecting my work in Graphql. </li>
-                    <li class="points">Im not boring, but i can be</li>
-                </ul>
-            </div>
+            <button class="panel-link" data-view="skills">EXPLORE CAPABILITIES <span>↗</span></button>
+          </section>
+          <button class="location-widget floating-panel" data-view="about"><span class="location-icon"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15"/><ellipse cx="20" cy="20" rx="7" ry="15"/><path d="M5 20h30M8 12h24M8 28h24"/></svg></span><span><span class="micro-label">HOME COORDINATES</span><strong>Kochi, India</strong><small>09.9312° N &nbsp; 76.2673° E</small></span><span class="location-cross">+</span></button>
+        </aside>
+
+        <div class="identity-core">
+          <div class="identity-top"><span class="micro-label">HUMAN AT THE CORE. CODE AT THE EDGE.</span><span class="identity-id">IDENTITY // SS–001</span></div>
+          <div class="portrait-system" id="portrait-system">
+            <div class="portrait-halo" aria-hidden="true"></div>
+            <svg class="orbital orbital-outer" viewBox="0 0 500 500" aria-hidden="true"><circle class="orbit-hairline" cx="250" cy="250" r="242"/><circle class="orbit-ticks" cx="250" cy="250" r="232"/><circle class="orbit-segment" cx="250" cy="250" r="222"/><circle class="orbit-fine" cx="250" cy="250" r="212"/></svg>
+            <svg class="orbital orbital-inner" viewBox="0 0 500 500" aria-hidden="true"><circle class="inner-track" cx="250" cy="250" r="200"/><circle class="inner-segment" cx="250" cy="250" r="198"/><path class="orbit-bracket" d="M122 110h-12v35m268-35h12v35M110 355v35h12m268-35v35h-12"/></svg>
+            <div class="orbit-label label-top" aria-hidden="true">NEURAL LINK / ACTIVE</div><div class="orbit-label label-left" aria-hidden="true">SS.001</div><div class="orbit-label label-right" aria-hidden="true">100%</div>
+            <div class="portrait-window"><img src="img/profilepic.png" alt="Sandra Sasi" width="429" height="573" fetchpriority="high"><div class="portrait-tint"></div><div class="portrait-scanlines"></div><div class="scan-beam"></div></div>
+            <div class="face-target" aria-hidden="true"><i></i><i></i><i></i><i></i><span>IDENTITY VERIFIED</span></div>
+            <span class="orbit-point point-one" aria-hidden="true"></span><span class="orbit-point point-two" aria-hidden="true"></span>
+            <button class="identity-badge" data-view="about"><span class="status-dot"></span> HELLO, HUMAN <span>↗</span></button>
           </div>
+          <div class="identity-copy"><p class="eyebrow">ENGINEER. EXPLORER. CREATOR.</p><h1>SANDRA <span>SASI</span><span class="name-period">.</span></h1><p class="role-line">Software engineer <span>/</span> Creative problem solver</p><p class="intro">Turning a little curiosity into<br>things that make a difference.</p><button class="primary-button" data-view="projects">EXPLORE MY WORK <svg><use href="#i-arrow"/></svg></button></div>
         </div>
-      </div>
-    <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header black">
-              <h5 class="modal-title" id="exampleModalLabel" style="color: #1175E3;">Experience</h5>
-            </div>
-            <div class="modal-body black">
-                <div class="container">
-                   <div class="qa-message-list" id="wallmessages">
-                        <div class="message-item" id="m16">
-                            <div class="message-inner">
-                                <div class="message-head clearfix"> 
-                                    <div class="user-detail">
-                                        <h5 class="handle">Deltafolks Genesis Private Limited - Jun 17</h5>
-                                    </div>
-                                </div>
-                                <div class="qa-message-content">
-                                    Entrepreneur.
-                                </div>
-                        </div></div>
-                        
-                        <div class="message-item" id="m9">
-                            <div class="message-inner">
-                                <div class="message-head clearfix"> 
-                                    <div class="user-detail">
-                                        <h5 class="handle">Malkove Technologies - July 17</h5>
-                                    </div>
-                                </div>
-                                <div class="qa-message-content">
-                                    Junior Developer : Started to work in this organization was creating web application including CMS,websites,portfolio
-                                </div>
-                        </div></div>
-                        
-                        <div class="message-item" id="m7">
-                            <div class="message-inner">
-                                <div class="message-head clearfix"> 
-                                    <div class="user-detail">
-                                        <h5 class="handle">Opteamix Business Solution - July 2019</h5>
-                                    </div>
-                                </div>
-                                <div class="qa-message-content">
-                                    Currenly im working as a Senior Software engineer under Javascript practise with ReactJs as the specialisation.
-                                    Im working on project based on US for a insurance brokarage company NFP. 
-                                </div>
-                        </div></div>
-                    </div>
-               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-    
-    <script>
-        var canvas = document.getElementById('particle1');
-        var context = canvas.getContext('2d');
-        
-        context.beginPath();
-        context.moveTo(0, 0);
-        context.lineTo(0, 70);
-        context.lineTo(10, 85);
-        context.lineTo(10, 135);
-        context.lineTo(0, 150);
-        context.lineTo(0, 480);
-        context.lineTo(5, 490);
-        context.lineTo(10, 490);
-        context.lineTo(20, 490);
-        context.lineTo(20, 250);
-        context.lineTo(10, 235);
-        context.lineTo(10, 185);
-        context.lineTo(20, 170);
-        context.lineTo(20, 40);
-        context.lineTo(10, 30);
-        context.lineTo(10, 20);
-        
-        context.closePath();
-        context.lineWidth = 1;
-        context.fillStyle = 'rgba(2,254,255,0.3)';
-        context.fill();
-        context.strokeStyle = 'transparent';
-        context.stroke();
-        </script>
-        
-        <script>
-        var canvas = document.getElementById('particle1_1');
-        var context = canvas.getContext('2d');
-        
-        context.beginPath();
-        context.lineTo(0, 0);
-        context.lineTo(10, 15);
-        context.lineTo(10, 65);
-        context.lineTo(0, 80);
-        context.lineTo(0, 0);
-        
-        context.closePath();
-        context.lineWidth = 1;
-        context.fillStyle = 'rgba(2,254,255,0.3)';
-        context.fill();
-        context.strokeStyle = 'transparent';
-        context.stroke();
-        </script>
-        
-         <script>
-        var canvas = document.getElementById('particle1_2');
-        var context = canvas.getContext('2d');
-        
-        context.beginPath();
-        context.lineTo(10, 80);
-        context.lineTo(0, 65);
-        context.lineTo(0, 15);
-        context.lineTo(10, 0);
-        context.lineTo(10, 80);
-        
-        context.closePath();
-        context.lineWidth = 1;
-        context.fillStyle = 'rgba(2,254,255,0.3)';
-        context.fill();
-        context.strokeStyle = 'transparent';
-        context.stroke();
-        </script>
 
-        
-        
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script>
-        $('#myModal').on('shown.bs.modal', function () {
-            $('#myInput').trigger('focus')
-        })
-    </script>
-  </body>
+        <aside class="right-column">
+          <section class="hud-panel experience-panel floating-panel" aria-labelledby="experience-title"><div class="panel-heading"><span class="panel-index">02 / FLIGHT LOG</span><span class="amber-text">◈</span></div><h2 id="experience-title">Built through<br>experience<span>.</span></h2><div class="experience-current"><span class="micro-label amber-text">CURRENT CHAPTER / 2024–PRESENT</span><h3>TARGOBANK</h3><div class="role-tags"><span>C#</span></div></div><div class="experience-trail"><span></span><p>From entrepreneurship<br>to engineering experiences.</p></div><button class="panel-link" data-view="experience">VIEW MY JOURNEY <span>↗</span></button></section>
+          <section class="signal-widget floating-panel" aria-label="Portfolio connections"><div><span class="micro-label">LET’S CONNECT</span><span class="signal-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div><p>Good things start<br>with a conversation.</p><div class="social-links"><a href="https://github.com/sandrasasi" target="_blank" rel="noopener noreferrer" aria-label="Sandra on GitHub"><i class="fa fa-github" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/sandrasasi/" target="_blank" rel="noopener noreferrer" aria-label="Sandra on LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="mailto:sandrasasi.cek@gmail.com" aria-label="Email Sandra"><svg><use href="#i-mail"/></svg></a><button class="contact-arrow" data-view="contact" aria-label="Open contact details">↗</button></div></section>
+        </aside>
+      </section>
+
+      <section class="projects-strip" aria-labelledby="projects-title"><div class="projects-label"><span class="micro-label">03 / SELECTED WORK</span><h2 id="projects-title">Ideas in action<span>.</span></h2><button class="text-button" data-view="projects">ALL PROJECTS <span>↗</span></button></div><button class="project-card" data-project="entertainment"><span class="project-number">01</span><span class="project-info"><span class="micro-label">WEB DEVELOPMENT</span><strong>Now That’s Entertainment</strong><span class="project-tech">DESIGN <span>·</span> WEB APPLICATION</span></span><svg><use href="#i-arrow"/></svg><span class="project-art art-one" aria-hidden="true"></span></button><button class="project-card" data-project="hotel"><span class="project-number">02</span><span class="project-info"><span class="micro-label">WEB DEVELOPMENT</span><strong>The Hotel Inspector</strong><span class="project-tech">HOSPITALITY <span>·</span> WEB APPLICATION</span></span><svg><use href="#i-arrow"/></svg><span class="project-art art-two" aria-hidden="true"></span></button><button class="project-card" data-project="nfc"><span class="project-number">03</span><span class="project-info"><span class="micro-label">ANDROID DEVELOPMENT</span><strong>NFC Messaging</strong><span class="project-tech">JAVA <span>·</span> ANDROID</span></span><svg><use href="#i-arrow"/></svg><span class="project-art art-three" aria-hidden="true"></span></button></section>
+    </main>
+
+    <footer class="bottom-bar"><div class="footer-note"><span class="status-dot"></span><span>POWERED BY CURIOSITY<small>AND A HEALTHY AMOUNT OF COFFEE.</small></span></div><nav class="nav-dock" aria-label="Main navigation"><a href="#overview" class="dock-item active" aria-current="page"><svg><use href="#i-grid"/></svg><span>OVERVIEW</span></a><button class="dock-item" data-view="about"><svg><use href="#i-user"/></svg><span>ABOUT</span></button><button class="dock-item" data-view="projects"><svg><use href="#i-code"/></svg><span>PROJECTS</span></button><button class="dock-item" data-view="experience"><svg><use href="#i-case"/></svg><span>JOURNEY</span></button><button class="dock-item" data-view="contact"><svg><use href="#i-mail"/></svg><span>CONTACT</span></button></nav><div class="footer-right"><span>MADE OF CODE & A LITTLE CHAOS.</span><small>© <span id="year">2026</span> SANDRA SASI <span class="tiny-cross">+</span></small></div></footer>
+  </div>
+
+  <dialog id="detail-dialog" aria-labelledby="dialog-title"><div class="dialog-topline"><span class="micro-label" id="dialog-label">PERSONAL INTERFACE</span><button class="dialog-close icon-button" aria-label="Close panel">✕</button></div><div id="dialog-content"></div><div class="dialog-footer"><span class="status-dot"></span> CONNECTION SECURE <span>SS / PERSONAL INTERFACE</span></div></dialog>
+  <div class="toast" id="toast" role="status"></div>
+</body>
 </html>
-
